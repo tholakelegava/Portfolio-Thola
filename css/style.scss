@@ -1,0 +1,648 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+    font-family:'Goudy-Bookletter-1911' ;
+    src: url('../Goudy_Bookletter_1911/GoudyBookletter1911-Regular.ttf');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background: var(--primary-color);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+//PHONE STYLES//
+:root{
+	--primary-color: black!;
+	--secondary-color: white;
+}
+*{
+	// overflow-x: hidden;
+	background: black;
+
+}
+.mobile-navbar{
+	display: block;
+	display: flex;
+	justify-content:space-between ;
+	align-items: center;
+	padding: 0 0em;
+	.hamburger{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		border: 2px solid #e3b74e;
+		height: 4rem;
+		width: 4rem;
+		gap: 5px;
+		margin: 15px;
+		.line{
+			background: #e3b74e;
+			width: 80%;
+			height: 2px;
+		}
+	}
+
+
+}
+.pc-navbar{
+	display: none;
+}
+#banner{
+	padding: 25vh;
+	// height: 150vh;
+	padding: 3rem 0;
+	
+	.container{
+		
+		
+		
+		.row{
+			.text{
+				display: flex;
+				align-items: center;
+				
+				font-size: 30px;
+				.hello{
+					h5{
+						color: white;
+
+					}
+					h1{
+						color: white;
+						font-size: 60px;
+						span{
+							color: #e3b74e;
+						}
+
+
+						
+						
+					}
+					
+					h3{
+						
+							color: #e3b74e;
+						
+					}
+					p{
+						color: white;
+					}
+					.buttons{
+						display: flex;
+						gap: 15px;
+						padding-top: 30px;
+						
+						.me{
+							button{
+								
+								background: #e3b74e;
+								color: black;
+								height: 3rem;
+								width: 8rem;
+								border: none;
+								border-radius: 4px;
+								font-size: 1rem;
+								font-weight: 700;
+								cursor: pointer;
+								transition: 0.8s;
+								position: relative;
+								overflow: hidden;
+								
+							}
+							.button.button:hover {
+								color: blue;
+
+							}
+							.button.button:hover {
+								color: blue;
+
+							}
+						}
+						.work{
+							button{
+								background: white;
+								color: black;
+								height: 3rem;
+								width: 8rem;
+								border: none;
+								border-radius: 4px;
+								font-size: 1rem;
+								font-weight: 700;
+								
+							}
+							
+						}
+					}
+
+				}
+			}
+			.pics{
+				img{
+					height: 300px;
+					object-fit: cover;
+					
+					
+					background: transparent;
+					border: 2px solid #e3b74e;
+					transition: 3s;
+					
+					box-shadow: 3rem #e3b74e;
+						
+					
+				}
+				img:hover {
+					background: #e3b74e;
+					box-shadow: 2px 5px 30px #e3b74e;
+				}
+				.pics:hover {
+					box-shadow: 0 4rem #e3b74e;
+					cursor: pointer;
+					transform: scale(1.15);
+				}
+				
+			}
+		}
+	}
+}
+#about{
+	height: 120vh;
+	padding-top: 20px;
+	text-transform: uppercase;
+	.container{
+		
+		.row{
+			
+			.thola{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				img{
+					object-fit: cover;
+					height: 450px;
+					
+					border-radius: 15px;
+					
+					
+
+				}
+			}
+			.this{
+				color: white;
+				.her{
+					color: #e3b74e;
+				}
+
+			}
+			.this p:hover{
+				border: 2px solid white;
+			}
+		}
+	}
+}
+
+// #services{
+// 	padding-top: 100px;
+// 	height: 100vh;
+// 	justify-content: center;
+// 	height: 60vh;
+// 	.take{
+// 		padding-bottom: 40px;
+// 		padding-left: 450px;
+// 		color: white;
+
+// 	}
+// 	.container{
+// 		display: flex;
+// 		gap: 50px;
+// 		justify-content: center;
+// 		align-items: center;
+		
+// 		.one{
+// 			p{
+// 				color: white;
+// 			}
+// 			h5{
+// 				color: white;
+// 			}
+// 			padding-left: 85px;
+			
+// 		}
+// 		.two{
+// 			p{
+// 				color: white;
+// 			}
+// 			h5{
+// 				color: white;
+// 			}
+			
+// 		}
+// 		.three{
+// 			p{
+// 				color: white;
+// 			}
+// 			h5{
+// 				color: white;
+// 			}
+			
+// 		}
+		
+		
+		
+
+		
+
+	
+		
+// 		.circle{
+// 			// padding-top: 60px;
+			
+// 			width: 90px;
+// 			height: 90px;
+// 			border-radius: 50%;
+// 			background-color: #e3b74e;
+// 			display: flex;
+// 			align-self: center;
+// 			align-items: center;
+// 			justify-content: center;
+// 			img{
+// 				width: 25px;
+// 				height: 25px;
+// 				// padding-left: 20px;
+				
+// 			}
+			
+// 		}
+// 	}
+// }
+#services{
+	height: 150vh;
+	h1{
+		color: #e3b74e;
+		
+		
+	}
+	.main-container{
+		background-color: #e3b74e;
+		height: 100vh;
+		width: 100%;
+		gap: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		.card{
+			width: 30%;
+			height: 35vh;
+			background-color: #e3b74e;
+			overflow: hidden;
+			.card-img{
+				height: 40vh;
+				width: 100%;
+				
+				
+			}
+			.overlay{
+				background-color: #e3b74e;
+				color: #e3b74e;
+				width: 70%;
+				padding: 10px;
+				transition: all 2s ease-in-out;
+				margin-left: auto;
+				margin-right: auto;
+				background: transparent;
+				
+				
+					
+				
+			}
+			.button{
+				text-decoration: none;
+				cursor: pointer;
+			}
+			.button:hover{
+				text-decoration: underline;
+			}
+		}
+	  .card:hover{
+		overflow: visible;
+		.overlay{
+			transform: translateY(-5rem);
+			transition: all 2s ease-in-out;
+			overflow: visible;
+		}
+	  }  
+		
+	}
+	
+}
+
+#skills{
+	height: 150vh;
+	padding-top: 100px;
+	.container{
+		display: flex;
+		justify-content: center;
+		.row{
+			.my{
+				.first{
+					color: white;
+				}
+				.second{
+					color: white;
+				}
+
+			}
+			.orange{
+				.pear{
+					.pearess{
+						display: flex;
+						gap: 400px;
+						color: white;
+					}
+					.blue{
+						height: 10px;
+						width: 500px;
+						background-color: white;
+						.bluer{
+							height: 10px;
+							width: 450px;
+							background: #e3b74e;
+
+						}
+					}
+
+				}
+			}
+			.orange{
+				.pear{
+					.pearess{
+						display: flex;
+						gap: 400px;
+						color: white;
+					}
+					.blue{
+						height: 10px;
+						width: 500px;
+						background-color: white;
+						.bluer{
+							height: 10px;
+							width: 450px;
+							background: #e3b74e;
+
+						}
+					}
+
+				}
+			}
+			.orange{
+				.pear{
+					.pearess{
+						display: flex;
+						gap: 400px;
+						color: white;
+					}
+					.blue{
+						height: 10px;
+						width: 500px;
+						background-color: white;
+						.bluer{
+							height: 10px;
+							width: 450px;
+							background: #e3b74e;
+
+						}
+					}
+
+				}
+			}
+			.orange{
+				.pear{
+					.pearess{
+						display: flex;
+						gap: 400px;
+						color: white;
+					}
+					.blue{
+						height: 10px;
+						width: 500px;
+						background-color: white;
+						.bluer{
+							height: 10px;
+							width: 450px;
+							background: #e3b74e;
+
+						}
+					}
+
+				}
+			}
+
+		}
+	}
+
+
+}
+#contact{
+	.container{
+		h1{
+			color: white;
+		}
+		.row{
+			.form{
+				form{
+					border: 1px solid #add;
+					padding: 1rem;
+					border-radius: 5px;
+					color:white;
+				}
+				label{
+					display: block;
+					margin-bottom: 5px;
+				}
+				input[type="text"],
+				input[type="email"]{
+					width: 100%;
+					padding: 8px;
+					border: 1px solid #ccc;
+					border-radius: 3px;
+					background: white;
+				}
+				textarea{
+					width: 100%;
+					padding: 10px;
+					border: 1px solid #ccc;
+					border-radius: 3px;
+					background: white;
+					font-size: 18px;
+				}
+				button{
+					background-color: #e3b74e;
+					color: black;
+					border-radius: 2%;
+					padding: 10px;
+					border: none;
+				}
+				   
+				
+			}
+			.info{
+				color: white;
+				img{
+					height: 25px;
+					width: 25px;
+				}
+
+				
+				
+				
+
+			}
+
+		}
+	}
+}
+#copyrights{
+	.copyright{
+		justify-content: center;
+		
+		color: white;
+	}
+}
+
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {  
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+	.mobile-navbar{
+		display: none;
+	}
+	.pc-navbar{
+		display: block;
+		
+		.flex-container{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.logo{
+
+				img{
+					height: 35px;
+					width: 35px;
+					padding-top: 20px;
+				}
+			}
+			
+
+			ul{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 20px;
+				font-weight: 600;
+
+				li{
+					color: white;
+					font-size: 20px;
+					a{
+						color: white;
+					}
+
+					span{
+		
+		color:#e3b74e ;
+					}
+				}
+			}
+	}
+
+}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+
+}
