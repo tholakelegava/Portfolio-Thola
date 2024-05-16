@@ -9,13 +9,48 @@
 </head>
 <body>
     <nav class="mobile-navbar">
-        <img src="./IMAGEZ/nav.png" alt=""> 
-        <div class="hamburger">
-         <div class="line"></div>
-         <div class="line"></div>
-         <div class="line"></div>
- 
-        </div>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Offcanvas navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+          
      </nav>
      <nav class="pc-navbar">
         <div class="container">
@@ -98,16 +133,13 @@
                 <div class="col-md-6 right">
                     <div class="this">
                         <h3>About me</h3>
-                        <p>Meet the digital marketing maestro, crafting captivating campaigns that drive results and ignite brand success</p>
-                        <p>Name                 Delight Tholakeke Gava</p>
-                        <p>Date of birth      08 September 2003 </p>
-                        <p>Address            6301 Macheke Close Budiroro Hr </p>
-                        <p>Email                   tholakelegava@gmail.com</p>
-                        <p>Phone                 +263 78 747 1652</p>
-                        <div class="her">
-                            <h5>6 Projects completed</h5>
-
-                        </div>
+                        <p>Meet; the digital marketing maestro, crafting captivating campaigns that drive results and ignite brand success</p>
+                        <p>Name ;                Delight Tholakeke Gava</p>
+                        <p>Date of birth ;     08 September 2003 </p>
+                        <p>Address ;           6301 Macheke Close Budiroro Hr </p>
+                        <p>Email  ;                 tholakelegava@gmail.com</p>
+                        <p>Phone ;                +263 78 747 1652</p>
+                       
 
                     </div>
 
@@ -187,7 +219,7 @@
                     <img src="./images/15630.jpg" alt="thola" class="card-img">
                     <div class="overlay">
                        
-                        <h2>Vide0 editing</h2>
+                        <h2>Video editing</h2>
                         <p>Cut to the chase</p>
                         <a href="#" class="button">Read more</a>
             
@@ -226,7 +258,7 @@
                         <div class="pear">
                             <div class="pearess">
                                 <h5>HTML</h5>
-                                <p>90%</p>
+                                <p></p>
 
                             </div>
                             <div class="blue">
@@ -245,8 +277,8 @@
             <div class="orange">
                 <div class="pear">
                     <div class="pearess">
-                        <h5>HTML</h5>
-                        <p>85%</p>
+                        <h5>CSS</h5>
+                        <p></p>
 
                     </div>
                     <div class="blue">
@@ -265,8 +297,8 @@
     <div class="orange">
         <div class="pear">
             <div class="pearess">
-                <h5>HTML</h5>
-                <p>70%</p>
+                <h5>JAVA</h5>
+                <p></p>
 
             </div>
             <div class="blue">
@@ -286,7 +318,7 @@
     <div class="pear">
         <div class="pearess">
             <h5>HTML</h5>
-            <p>60%</p>
+            <p></p>
 
         </div>
         <div class="blue">
@@ -373,16 +405,15 @@
         </div>
 
      </section>
-     <section id="copyrights">
-        <div class="copyright">
-            <p>copyrights made by love @Thola</p>
+     <div class="copyright">
+        <p>copyright @ Thola </p>
 
+     </div>
 
-        </div>
-     </section>
-
-
-    
+     <script src="./main.js"></script>
+   
+     <script src="./bootsrap/js/bootstrap.bundle.min.js"></script>
+      
     
 </body>
 </html>
